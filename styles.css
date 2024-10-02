@@ -1,0 +1,148 @@
+:root {
+        /*Color Library*/
+        --primary-brand-color: #672FE9;
+        --secondary-brand-color: #B097E9;
+        --dark-color: #3B3B3B;
+        --light-color: #EEEBF7;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: var(--primary-brand-color);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/*Left panel*/
+.hero {
+    background-color: var(--primary-brand-color);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 42%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 152px;
+}
+
+.hero-content img {
+    max-width: 500px;
+}
+
+.word-mark {
+    display: flex;
+    height: 39px;
+    align-items: center;
+    align-self: stretch;
+    padding-left: 20%;
+}
+
+.caption {
+    color: var(--light-color);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/*Right panel*/
+.form-section {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 58%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.form-group {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16;
+}
+
+button {
+    color: var(--primary-brand-color);
+    background-color: var(--secondary-brand-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 180px;
+    height: 40px;
+}
+
+button:active {
+    background-color: var(--primary-brand-color);
+    color: var(--secondary-brand-color);
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-brand-color);
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--primary-brand-color); /* Bottom border for underline effect */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--dark-color);
+}
